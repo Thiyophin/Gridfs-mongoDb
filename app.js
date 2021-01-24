@@ -112,7 +112,7 @@ app.get('/image/:filename',(req,res)=>{
     }
 
 // Check if image
-if(files.contentType === 'image/jpeg' || files.contentType === 'img/png'){
+if(files.contentType === 'image/jpeg' || files.contentType === 'image/png'){
      // Read output to browser
      const readstream = gfs.createReadStream(files.filename);
      readstream.pipe(res);
