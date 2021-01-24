@@ -21,7 +21,10 @@ app.set('view engine', 'ejs');
 const mongoURL = "mongodb://localhost:27017/test"
 
 //create mongo connection
-const connection = mongoose.createConnection(mongoURL)
+const connection = mongoose.createConnection(mongoURL, {
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+});
 
 //init gfs
 let gfs;
