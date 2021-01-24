@@ -1,2 +1,2 @@
 # Gridfs-mongoDb
-Upload media files to mongodb as chunks
+Upload media files to mongodb 
